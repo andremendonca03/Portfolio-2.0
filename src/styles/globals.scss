@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RESET */
+@import 'reset';
+@import 'mixins';
+
+@layer base {
+  html:root {
+    --color-root-bg: #{$color-n-darkBg};
+    --color-root-text: #{$color-n-white};
+    --color-root-text-muted: #{$color-p-text};
+    --color-root-accent: #{$color-p};
+    --color-root-accent-80: #{$color-p-80};
+  }
+  html.designMode:root {
+    --color-root-bg: #{$color-n-white};
+    --color-root-text: #{$color-n-darkBg};
+    --color-root-text-muted: #{$color-s-text};
+    --color-root-accent: #{$color-s};
+    --color-root-accent-80: #{$color-s-80};
+  }
+}
+
+@layer components {
+  .font-small {
+    font-family: var(--font-fira-code);
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+  .font-copy {
+    font-family: var(--font-inria-sans);
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 140%;
+    letter-spacing: 0px;
+  }
+  .font-emphasis {
+    font-family: var(--font-fira-code);
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 140%;
+    letter-spacing: 0px;
+  }
+  .font-large {
+    font-family: var(--font-fira-code);
+    font-size: 1.6rem;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 125%;
+    letter-spacing: 0px;
+  }
+  .font-heading5 {
+    font-family: var(--font-inria-sans);
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+  .font-heading4 {
+    font-family: var(--font-inria-sans);
+    font-size: 2.6rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+  .font-heading3 {
+    font-family: var(--font-inria-sans);
+    font-size: 3.6rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 130%;
+    letter-spacing: 0px;
+  }
+  .font-heading2 {
+    font-family: var(--font-inria-sans);
+    font-size: 4.8rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+  .font-heading1 {
+    font-family: var(--font-inria-sans);
+    font-size: 6rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+  .pageGrid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: $space-3;
+    max-width: 1395px;
+    padding: 0 $space-3;
+    margin: 0 auto;
+  }
+  .container {
+    max-width: 1395px;
+    padding: 0 $space-3;
+    margin: 0 auto;
+  }
+  .button {
+    @include font(large);
+    max-width: fit-content;
+    text-align: center;
+    padding: 15px 60px;
+    border-radius: $border-radius;
+    margin: 0 auto;
+    transition: .15s;
+  }
+  .td-150 {
+    transition: .15s;
+  }
+}
+
+body {
+  &::after {
+    content: '';
+    display: block;
+    width: 600px;
+    height: 600px;
+    background: #5345F5;
+    opacity: .5;
+    border-radius: 50%;
+    box-shadow: 0 0 250px 100px #5345F588;
+    filter: blur(100px);
+    position: fixed;
+    top: 100px;
+    right: 0;
+    animation: pulse 5s alternate infinite;
+  }
+}
+
+@keyframes pulse {
+  50% {
+    filter: blur(50px);
+    box-shadow: 0 0 250px 0px #5345F588;
+  }
+  100% {
+    box-shadow: 0 0 250px 100px #5345F588;
+  }
+}
+
+
+/* BREAKPOINTS - MOBILE FIRST */
+@media only screen and (max-width: 578px) {
+  html {
+    font-size: 52%;
+  }
+}
+@media only screen and (min-width: 578px) {
+  html {
+    font-size: 54.5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (min-width: 1275px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (min-width: 1396px) {
+
+}
+
+@media only screen and (min-width: 1560px) {
+
+}
+
+
+/* BREAKPOINTS - DESKTOP FIRST */
+
+@media only screen and (max-width: 768px) {
+  .font-heading1 {
+    font-size: 4.8rem;
+  }
+}
+
+
+
+

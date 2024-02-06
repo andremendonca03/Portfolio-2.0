@@ -1,0 +1,184 @@
+/*
+==========================
+  BORDER RADIUS
+==========================
+*/
+$border-radius-sm: 2px;
+$border-radius: 5px;
+$border-radius-md: 10px;
+$border-radius-lg: 15px;
+$border-radius-xl: 20px;
+$border-radius-2xl: 25px;
+$border-radius-3xl: 35px;
+
+
+/*
+==========================
+  Z-INDEX
+==========================
+*/
+$z-index-1: 1;
+$z-index-2: 2;
+$z-index-5: 5;
+$z-index-10: 10;
+$z-index-20: 20;
+$z-index-30: 30;
+$z-index-40: 40;
+$z-index-50: 50;
+
+
+/*
+==========================
+  COLOURS
+==========================
+*/
+
+$color-p: #493BE3;
+$color-p-80: #5345F5;
+$color-p-text: #C5C3D7;
+
+$color-s: #E3442F;
+$color-s-80: #F54545;
+$color-s-text: #530909;
+
+$color-n-darkBg: #111111;
+$color-n-black: #000000;
+$color-n-grey: #DDDDDD;
+$color-n-white: #FFFFFF;
+
+$color-m-success: #3CC13B;
+$color-m-success-light: #9DDF9C;
+$color-m-warning: #F3BB1C;
+$color-m-warning-light: #F8DC8D;
+$color-m-danger: #F03738;
+$color-m-danger-light: #F79A9B;
+
+$shadow-10: rgba(0, 0, 0, 0.1);
+
+/*
+==========================
+  TYPOGRAPHY
+==========================
+*/
+
+@mixin font($type) {
+  @if $type == small {
+    font-family: var(--font-fira-code);
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 120%;
+    letter-spacing: 0px;
+  } @else if $type == copy {
+    font-family: var(--font-inria-sans);
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: none;
+    line-height: 140%;
+    letter-spacing: 0px;
+  } @else if $type == emphasis {
+    font-family: var(--font-fira-code);
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 140%;
+    letter-spacing: 0px;
+  } @else if $type == large {
+    font-family: var(--font-fira-code);
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 125%;
+    letter-spacing: 0px;
+  } @else if $type == heading5 {
+    font-family: var(--font-inria-sans);
+    font-size: 2.4rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+  @else if $type == heading4 {
+    font-family: var(--font-inria-sans);
+    font-size: 2.6rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+  @else if $type == heading3 {
+    font-family: var(--font-inria-sans);
+    font-size: 3.6rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 130%;
+    letter-spacing: 0px;
+  }
+  @else if $type == heading2 {
+    font-family: var(--font-inria-sans);
+    font-size: 4.8rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 120%;
+    letter-spacing: 0px;
+  }
+  @else if $type == heading1 {
+    font-family: var(--font-inria-sans);
+    font-size: 6rem;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    line-height: 100%;
+    letter-spacing: 0px;
+  }
+}
+
+/*
+==========================
+  SPACING
+==========================
+*/
+
+$space-1: 5px;
+$space-2: 10px;
+$space-3: 15px;
+$space-4: 25px;
+$space-5: 40px;
+$space-6: 60px;
+$space-7: 90px;
+$space-8: 120px;
+$space-9: 150px;
+$space-10: 180px;
+
+/*
+==========================
+  GRID
+==========================
+*/
+
+@mixin pageGrid($cols) {
+  display: grid;
+  grid-template-columns: repeat($cols, minmax(0, 1fr));
+  column-gap: $space-3;
+  max-width: 1395px;
+  padding: 0 $space-3;
+  margin: 0 auto;
+}
+
+@mixin button() {
+  @include font(large);
+  max-width: fit-content;
+  text-align: center;
+  padding: 15px 60px;
+  border-radius: $border-radius;
+  margin: 0 auto;
+  transition: .15s;
+}
