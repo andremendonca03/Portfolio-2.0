@@ -138,10 +138,10 @@ body {
     display: block;
     width: 600px;
     height: 600px;
-    background: #5345F5;
+    background: var(--color-root-accent-80);
     opacity: .5;
     border-radius: 50%;
-    box-shadow: 0 0 250px 100px #5345F588;
+    box-shadow: 0 0 250px 100px var(color-root-accent-80);
     filter: blur(100px);
     position: fixed;
     top: 100px;
@@ -153,10 +153,10 @@ body {
 @keyframes pulse {
   50% {
     filter: blur(50px);
-    box-shadow: 0 0 250px 0px #5345F588;
+    box-shadow: 0 0 250px 0px var(color-root-accent-80);
   }
   100% {
-    box-shadow: 0 0 250px 100px #5345F588;
+    box-shadow: 0 0 250px 100px var(color-root-accent-80);
   }
 }
 
