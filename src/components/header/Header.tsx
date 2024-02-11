@@ -1,5 +1,7 @@
 "use client";
 
+import React from "react";
+import { GlobalContext } from "@/contexts/GlobalContext";
 import Link from "next/link";
 import LogoIcon from "../icons/LogoIcon";
 import LampIcon from "../icons/LampIcon";
@@ -9,28 +11,26 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import React from "react";
+
 
 const Header = () => {
-
-  const [currentTheme, setCurrentTheme] = React.useState("Dev Mode");
+  const global = React.useContext(GlobalContext);
+  const [currentTheme, setCurrentTheme] = React.useState("Design Mode");
 
   function handleThemeChange() {
-    const html = document.documentElement;
-    if (html) {
-      html.classList.toggle("devMode");
-      html.classList.toggle("designMode");
-
-      if (html.classList.contains("devMode")) {
+    global.setThemeMode(prev => {
+      if (prev === "designMode") {
         setCurrentTheme("Design Mode");
-      } else {
-        setCurrentTheme("Dev Mode");
+        return "devMode";
       }
-    }
+
+      setCurrentTheme("Dev Mode");
+      return "designMode";
+    });
   }
 
   return (
-    <header className="sticky top-0 bg-r-bg td-150 ">
+    <header className="sticky top-0 bg-r-bgGlassy backdrop-blur-lg td-150 z-50">
       <div className="container flex justify-between items-center py-3">
         <Link href="/" className="hover:scale-110 transition duration-150">
           <LogoIcon />
