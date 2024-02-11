@@ -28,6 +28,7 @@ const config: Config = {
       colors: {
         r: {
           bg: "var(--color-root-bg)",
+          bgGlassy: "var(--color-root-bgGlassy)",
           text: "var(--color-root-text)",
           "text-muted": "var(--color-root-text-muted)",
           accent: "var(--color-root-accent)",
