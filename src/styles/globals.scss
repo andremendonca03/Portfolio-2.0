@@ -6,9 +6,11 @@
 @import 'reset';
 @import 'mixins';
 
+
 @layer base {
   html:root {
     --color-root-bg: #{$color-n-darkBg};
+    --color-root-bgGlassy: #{transparentize($color-n-darkBg, .1)};
     --color-root-text: #{$color-n-white};
     --color-root-text-muted: #{$color-p-text};
     --color-root-accent: #{$color-p};
@@ -16,6 +18,7 @@
   }
   html.designMode:root {
     --color-root-bg: #{$color-n-white};
+    --color-root-bgGlassy: #{transparentize($color-n-white, .4)};
     --color-root-text: #{$color-n-darkBg};
     --color-root-text-muted: #{$color-s-text};
     --color-root-accent: #{$color-s};
@@ -123,6 +126,7 @@
     max-width: fit-content;
     text-align: center;
     padding: 15px 60px;
+    border: 2px solid transparent;
     border-radius: $border-radius;
     margin: 0 auto;
     transition: .15s;
