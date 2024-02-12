@@ -92,6 +92,20 @@ const config: Config = {
       },
     },
   },
+  safelist: [
+    'border-s',
+    'border-s-80',
+    'border-p',
+    'border-p-80',
+    'bg-s',
+    'bg-p',
+    'bg-p-80',
+    'bg-s-80',
+    'hover:bg-p-80',
+    'hover:bg-s-80',
+    'shadow-p',
+    'shadow-s',
+  ],
   plugins: [],
 }
 export default config;

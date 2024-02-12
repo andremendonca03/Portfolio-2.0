@@ -10,7 +10,7 @@
 @layer base {
   html:root {
     --color-root-bg: #{$color-n-darkBg};
-    --color-root-bgGlassy: #{transparentize($color-n-darkBg, .1)};
+    --color-root-bgGlassy: #{transparentize($color-n-darkBg, .5)};
     --color-root-text: #{$color-n-white};
     --color-root-text-muted: #{$color-p-text};
     --color-root-accent: #{$color-p};
@@ -127,6 +127,7 @@
     text-align: center;
     padding: 15px 60px;
     border: 2px solid transparent;
+    border-width: 2px !important;
     border-radius: $border-radius;
     margin: 0 auto;
     transition: .15s;
@@ -136,6 +137,7 @@
   }
 }
 
+/*
 body {
   &::after {
     content: '';
@@ -152,6 +154,17 @@ body {
     right: 0;
     animation: pulse 5s alternate infinite;
   }
+}*/
+
+body.preventScroll {
+  height: 100vh;
+  overflow: hidden;
+}
+body {
+  //overflow-x: hidden;
+}
+html {
+  overflow: auto;
 }
 
 @keyframes pulse {
