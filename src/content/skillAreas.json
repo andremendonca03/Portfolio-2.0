@@ -1,0 +1,54 @@
+{
+  "skillAreas": [
+    {
+      "title": "UX/UI Design",
+      "copy": "<p>I am a <strong>Front-End Developer</strong> who is passionate about coding and creating well designed applications. The feeling of challenge is what makes me determined to solve problems and work out the best solutions, always aiming to level up.</p> <p>As a student, I have completed many advanced courses in different areas of programming and design, and I am eager to discover and learn much more.As a worker, I am hard-worker completely adaptable for any work environment to develop and grow as a team or by myself.</p>",
+      "link": {
+        "url": "/projects/?type=design",
+        "title": "View UI/UX Projects"
+      },
+      "skills": ["Figma", "Adobe XD", "Design System", "Wireframing", "Variable & Mobile First"],
+      "color": "s"
+    },
+    {
+      "title": "Front-end Styling",
+      "copy": "<p>I am a <strong>Front-End Developer</strong> who is passionate about coding and creating well designed applications. The feeling of challenge is what makes me determined to solve problems and work out the best solutions, always aiming to level up.</p> <p>As a student, I have completed many advanced courses in different areas of programming and design, and I am eager to discover and learn much more.As a worker, I am hard-worker completely adaptable for any work environment to develop and grow as a team or by myself.</p>",
+      "link": {
+        "url": "/projects/?type=design",
+        "title": "View UI/UX Projects"
+      },
+      "skills": ["Figma", "Adobe XD", "Design System", "Wireframing", "Variable & Mobile First"],
+      "color": "s"
+    },
+    {
+      "title": "Headless CMS",
+      "copy": "<p>I am a <strong>Front-End Developer</strong> who is passionate about coding and creating well designed applications. The feeling of challenge is what makes me determined to solve problems and work out the best solutions, always aiming to level up.</p> <p>As a student, I have completed many advanced courses in different areas of programming and design, and I am eager to discover and learn much more.As a worker, I am hard-worker completely adaptable for any work environment to develop and grow as a team or by myself.</p>",
+      "link": {
+        "url": "/projects/?type=design",
+        "title": "View UI/UX Projects"
+      },
+      "skills": ["Figma", "Adobe XD", "Design System", "Wireframing", "Variable & Mobile First"],
+      "color": "p"
+    },
+    {
+      "title": "Web Development",
+      "copy": "<p>I am a <strong>Front-End Developer</strong> who is passionate about coding and creating well designed applications. The feeling of challenge is what makes me determined to solve problems and work out the best solutions, always aiming to level up.</p> <p>As a student, I have completed many advanced courses in different areas of programming and design, and I am eager to discover and learn much more.As a worker, I am hard-worker completely adaptable for any work environment to develop and grow as a team or by myself.</p>",
+      "link": {
+        "url": "/projects/?type=dev",
+        "title": "View Web Dev Projects"
+      },
+      "skills": ["Next.js", "React", "Typescript", "Wireframing", "Variable & Mobile First"],
+      "color": "p"
+    },
+    {
+      "title": "APIs & Data Handling",
+      "copy": "<p>I am a <strong>Front-End Developer</strong> who is passionate about coding and creating well designed applications. The feeling of challenge is what makes me determined to solve problems and work out the best solutions, always aiming to level up.</p> <p>As a student, I have completed many advanced courses in different areas of programming and design, and I am eager to discover and learn much more.As a worker, I am hard-worker completely adaptable for any work environment to develop and grow as a team or by myself.</p>",
+      "link": {
+        "url": "/projects/?type=design",
+        "title": "View UI/UX Projects"
+      },
+      "skills": ["Figma", "Adobe XD", "Design System", "Wireframing", "Variable & Mobile First"],
+      "color": "p"
+    }
+  ]
+}
