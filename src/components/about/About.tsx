@@ -4,9 +4,9 @@ import { Switch } from "@/components/ui/switch";
 
 const About = () => {
   return (
-    <section className="container py-4">
+    <section className="container py-4" id="about-me">
       <div className="flex gap-2 items-center max-w-[790px] pb-3 border-b border-n-grey mb-5">
-        <span className="block max-w-fit font-small text-r-text -rotate-90 -ml-4 mb-3 td-150">- Toggle -</span>
+        <span className="block max-w-fit font-small text-r-text-muted -rotate-90 -ml-4 mb-3 td-150">- Toggle -</span>
 
         <Switch className="mb-2" />
       </div>
@@ -20,7 +20,7 @@ const About = () => {
         </p>
       </div>
 
-      <Link href="#my-work" scroll={false} className="button border-r-accent ml-0 text-r-text shadow-[0_0_4px_1px] shadow-r-text-muted hover:bg-r-accent-80 hover:text-n-white">View Work</Link>
+      <Link href="#my-work" scroll={false} className="button border-r-accent ml-0 text-r-text shadow-[0_0_4px_1px] shadow-r-accent-80 hover:bg-r-accent-80 hover:text-n-white">View Work</Link>
     </section>
   )
 }
