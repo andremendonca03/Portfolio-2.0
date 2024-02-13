@@ -11,6 +11,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import MobileMenu from "./MobileMenu";
 
 
 const Header = () => {
@@ -30,20 +31,20 @@ const Header = () => {
   }
 
   return (
-    <header className="sticky top-0 bg-r-bgGlassy backdrop-blur-lg td-150 z-50">
+    <header className="sticky top-0 bg-r-bg td-150 z-50 md:bg-r-bgGlassy md:backdrop-blur-lg">
       <div className="container flex justify-between items-center py-3">
         <Link href="/" className="hover:scale-110 transition duration-150">
-          <LogoIcon />
+          <LogoIcon className="size-5 md:size-[50px]" />
         </Link>
 
-        <nav className="flex gap-5 font-large text-r-text">
-          <Link href="#about-me" scroll={false}>About me</Link>
-          <Link href="#skills" scroll={false}>Skills</Link>
-          <Link href="#showcase" scroll={false}>Showcase</Link>
-          <Link href="#contact" scroll={false}>Contact</Link>
+        <nav className="hidden gap-5 font-large text-r-text md:flex">
+          <Link href={"#about-me"}>About me</Link>
+          <Link href={"#skills"}>Skills</Link>
+          <Link href={"#showcase"}>Showcase</Link>
+          <Link href={"#contact"}>Contact</Link>
         </nav>
 
-        <div>
+        <div className="flex items-center gap-4">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
@@ -57,7 +58,7 @@ const Header = () => {
             </Tooltip>
           </TooltipProvider>
 
-
+          <MobileMenu />
         </div>
       </div>
     </header>
