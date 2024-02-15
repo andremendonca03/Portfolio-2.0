@@ -105,6 +105,8 @@ const config: Config = {
     'hover:bg-s-80',
     'shadow-p',
     'shadow-s',
+    'hover:shadow-p-80',
+    'hover:shadow-s-80',
   ],
   plugins: [],
 }

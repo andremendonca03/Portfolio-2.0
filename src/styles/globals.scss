@@ -18,7 +18,7 @@
   }
   html.designMode:root {
     --color-root-bg: #{$color-n-white};
-    --color-root-bgGlassy: #{transparentize($color-n-white, .4)};
+    --color-root-bgGlassy: #{transparentize($color-n-white, .7)};
     --color-root-text: #{$color-n-darkBg};
     --color-root-text-muted: #{$color-s-text};
     --color-root-accent: #{$color-s};
