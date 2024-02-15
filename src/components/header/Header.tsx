@@ -13,22 +13,8 @@ import {
 } from "@/components/ui/tooltip"
 import MobileMenu from "./MobileMenu";
 
-
 const Header = () => {
   const global = React.useContext(GlobalContext);
-  const [currentTheme, setCurrentTheme] = React.useState("Design Mode");
-
-  function handleThemeChange() {
-    global.setThemeMode(prev => {
-      if (prev === "designMode") {
-        setCurrentTheme("Design Mode");
-        return "devMode";
-      }
-
-      setCurrentTheme("Dev Mode");
-      return "designMode";
-    });
-  }
 
   return (
     <header className="sticky top-0 bg-r-bg td-150 z-50 md:bg-r-bgGlassy md:backdrop-blur-lg">
@@ -49,11 +35,15 @@ const Header = () => {
             <Tooltip>
               <TooltipTrigger>
                 <LampIcon className="cursor-pointer [html.devMode_&>.inside]:fill-none [html.designMode_&>.stroke]:fill-r-text"
-                onClick={handleThemeChange} />
+                onClick={global.handleThemeChange} />
               </TooltipTrigger>
 
               <TooltipContent>
-                <p>{currentTheme}</p>
+                <p>
+                {global.themeMode === "devMode"
+                ? "Dev Mode"
+                : "Design Mode"
+                }</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
