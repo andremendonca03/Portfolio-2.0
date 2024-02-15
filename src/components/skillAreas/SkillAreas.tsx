@@ -18,7 +18,7 @@ const SkillAreas = () => {
   }, [activeTab]);
 
   return (
-    <section className="container py-7 flex justify-between items-start gap-5">
+    <section className="container py-7 flex justify-between items-start gap-5" id="skills">
       <div className="flex gap-3">
         <SideLine skillAreas={skillAreas} activeTab={activeTab} />
 

@@ -22,7 +22,7 @@ export const GlobalStorage = ({ children }: { children: React.ReactNode }) => {
   function handleThemeChange() {
     const html = document.documentElement;
 
-    setThemeMode((prev) => {
+    setThemeMode(prev => {
       if (prev === "devMode") {
         html.classList.remove("devMode");
         html.classList.add("designMode");
