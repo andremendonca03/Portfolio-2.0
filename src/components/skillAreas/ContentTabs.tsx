@@ -32,7 +32,7 @@ const ContentTabs = ({
 
             <Link
               className={cn(
-                `button border-${item.color} ml-0 mb-4 text-r-text hover:bg-${item.color}-80 hover:text-n-white`
+                `button border-${item.color} ml-0 mb-4 text-r-text hover:bg-${item.color}-80 hover:text-n-white hover:shadow-lg hover:shadow-${item.color}-80`
               )}
               href={item.link.url}
             >

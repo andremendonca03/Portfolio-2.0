@@ -20,7 +20,7 @@ const About = () => {
         </p>
       </div>
 
-      <Link href="#my-work" scroll={false} className="button border-r-accent ml-0 text-r-text shadow-[0_0_4px_1px] shadow-r-accent-80 hover:bg-r-accent-80 hover:text-n-white">View Work</Link>
+      <Link href="#my-work" scroll={false} className="button border-r-accent ml-0 text-r-text shadow-[0_0_4px_1px] shadow-r-accent-80 hover:bg-r-accent-80 hover:text-n-white hover:shadow-lg hover:shadow-r-accent-80">View Work</Link>
     </section>
   )
 }
