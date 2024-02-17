@@ -13,7 +13,7 @@ const SkillAreas = () => {
   const [activeTab, setActiveTab] = React.useState<number>(0);
 
   return (
-    <section className="container py-7 flex justify-between items-start gap-5" id="skills">
+    <section className="container py-10 flex justify-between items-start gap-5" id="skills">
       <div className="flex gap-3">
         <SideLine skillAreas={skillAreas} activeTab={activeTab} />
 

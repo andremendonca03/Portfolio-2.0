@@ -4,6 +4,7 @@ import About from "@/components/about/About";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import IntroSection from "@/components/introSection/IntroSection";
+import ProjectsShowcase from "@/components/projectsShowcase/ProjectsShowcase";
 import Sidebar from "@/components/sidebar/Sidebar";
 import SkillAreas from "@/components/skillAreas/SkillAreas";
 import Strip from "@/components/strip/Strip";
@@ -45,10 +46,12 @@ const Homepage = () => {
       <div className="relative z-1 inset-0 w-full h-full">
         <Header />
 
-        <main className="main">
+        <main className="main overflow-hidden">
           <IntroSection />
           <About />
+          <Strip />
           <SkillAreas />
+          <ProjectsShowcase />
         </main>
 
         <Footer />
