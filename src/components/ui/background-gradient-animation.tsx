@@ -157,7 +157,7 @@ export const BackgroundGradientAnimation = ({
             `opacity-100`
           )}
         ></div>
-
+        
         {interactive && (
           <div
             ref={interactiveRef}

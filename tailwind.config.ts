@@ -14,6 +14,7 @@ const config: Config = {
       xl: "1275px",
       "2xl": "1396px",
       "3xl": "1560px",
+      "4xl": "2000px",
     },
     extend: {
       borderRadius: {
