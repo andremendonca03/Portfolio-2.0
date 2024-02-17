@@ -12,14 +12,17 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 import MobileMenu from "./MobileMenu";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const global = React.useContext(GlobalContext);
 
+  const pathname = usePathname();
+
   return (
     <header className="sticky top-0 bg-r-bg td-150 z-50 md:bg-r-bgGlassy md:backdrop-blur-lg">
       <div className="container flex justify-between items-center py-3">
-        <Link href="/" className="hover:scale-110 transition duration-150">
+        <Link href={pathname === "/" ? "#intro" : "/"} className="hover:scale-110 transition duration-150">
           <LogoIcon className="size-5 md:size-[50px]" />
         </Link>
 
