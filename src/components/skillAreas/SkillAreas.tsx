@@ -12,11 +12,6 @@ const SkillAreas = () => {
 
   const [activeTab, setActiveTab] = React.useState<number>(0);
 
-
-  React.useEffect(() => {
-    console.log(activeTab);
-  }, [activeTab]);
-
   return (
     <section className="container py-7 flex justify-between items-start gap-5" id="skills">
       <div className="flex gap-3">
