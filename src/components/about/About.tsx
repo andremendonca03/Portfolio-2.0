@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { Switch } from "@/components/ui/switch";
+import cn from "@/constants/filters/cn";
+import React from "react";
+import { GlobalContext } from "@/contexts/GlobalContext";
 
 const About = () => {
+  const global = React.useContext(GlobalContext);
 
   return (
     <section className="container py-4" id="about-me">
@@ -13,21 +17,46 @@ const About = () => {
         <Switch className="mb-2" />
       </div>
 
-      <div className="max-w-[790px] font-copy text-r-text-muted mb-5">
-        <p className="mb-3">
-          I am a{" "}
-          <strong className="text-r-text font-bold">Front-End Developer</strong>{" "}
-          who is passionate about coding and creating well designed
-          applications. The feeling of challenge is what makes me determined to
-          solve problems and work out the best solutions, always aiming to level
-          up.
-        </p>
-        <p className="mb-3">
-          As a student, I have completed many advanced courses in different
-          areas of programming and design, and I am eager to discover and learn
-          much more.As a worker, I am hard-worker completely adaptable for any
-          work environment to develop and grow as a team or by myself.
-        </p>
+      <div className="grid">
+        <div className={cn("col-start-1 row-start-1 max-w-[790px] font-copy text-r-text-muted mb-5 translate-y-4 opacity-0 invisible", {
+          "translate-y-0 visible opacity-100 transition duration-300":
+          global.themeMode === "devMode",
+        })}>
+          <p className="mb-3">
+            I am a
+            <strong className="text-r-text font-bold"> Front-End Developer </strong>
+            who is passionate about coding and creating well designed
+            applications. The feeling of challenge is what makes me determined to
+            solve problems and work out the best solutions, always aiming to level
+            up.
+          </p>
+          <p className="mb-3">
+            As a student, I have completed many advanced courses in different
+            areas of programming and design, and I am eager to discover and learn
+            much more.As a worker, I am hard-worker completely adaptable for any
+            work environment to develop and grow as a team or by myself.
+          </p>
+        </div>
+
+        <div className={cn("col-start-1 row-start-1 max-w-[790px] font-copy text-r-text-muted mb-5 translate-y-4 opacity-0 invisible", {
+          "translate-y-0 visible opacity-100 transition duration-300":
+          global.themeMode === "designMode",
+        })}>
+          <p className="mb-3">
+            I am a
+            <strong className="text-r-text font-bold"> UI/UX Designer </strong>
+            who is passionate about coding and creating well designed
+            applications. The feeling of challenge is what makes me determined to
+            solve problems and work out the best solutions, always aiming to level
+            up.
+          </p>
+          <p className="mb-3">
+            As a student, I have completed many advanced courses in different
+            areas of programming and design, and I am eager to discover and learn
+            much more.As a worker, I am hard-worker completely adaptable for any
+            work environment to develop and grow as a team or by myself.
+          </p>
+        </div>
       </div>
 
       <Link

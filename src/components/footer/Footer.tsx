@@ -6,7 +6,9 @@ import DribbbleIcon from '../icons/DribbbleIcon';
 const Footer = () => {
 
   return (
-    <footer className='container py-6' id="contact">
+    <footer className='container py-6 relative' id="contact">
+      <span className="block w-max font-small text-r-text-muted rotate-90 absolute top-7 -right-[35px]">- Contact Me -</span>
+
       <h2 className='font-heading4 text-r-text mb-2'>Get in touch</h2>
       <p className='text-r-text-muted mb-3' >Want to know more about me or have any enquiries? Let’s chat!</p>
 
