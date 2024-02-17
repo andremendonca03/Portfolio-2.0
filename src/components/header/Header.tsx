@@ -23,11 +23,11 @@ const Header = () => {
           <LogoIcon className="size-5 md:size-[50px]" />
         </Link>
 
-        <nav className="hidden gap-5 font-large text-r-text md:flex">
-          <Link href={"#about-me"}>About me</Link>
-          <Link href={"#skills"}>Skills</Link>
-          <Link href={"#showcase"}>Showcase</Link>
-          <Link href={"#contact"}>Contact</Link>
+        <nav className="group hidden gap-5 font-large text-r-text md:flex">
+          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"#about-me"}>About me</Link>
+          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"#skills"}>Skills</Link>
+          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"#showcase"}>Showcase</Link>
+          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"#contact"}>Contact</Link>
         </nav>
 
         <div className="flex items-center gap-4">
@@ -41,8 +41,8 @@ const Header = () => {
               <TooltipContent>
                 <p>
                 {global.themeMode === "devMode"
-                ? "Dev Mode"
-                : "Design Mode"
+                ? "Design Mode"
+                : "Dev Mode"
                 }</p>
               </TooltipContent>
             </Tooltip>

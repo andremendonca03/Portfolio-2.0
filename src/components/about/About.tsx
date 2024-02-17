@@ -1,29 +1,12 @@
-"use client";
-
 import Link from "next/link";
 import { Switch } from "@/components/ui/switch";
-import { motion, useScroll, useTransform } from "framer-motion";
-import React from "react";
-import cn from "@/constants/filters/cn";
 
 const About = () => {
-  const aboutSectionRef = React.useRef<HTMLElement>(null);
-
-  const { scrollYProgress } = useScroll({
-    target: aboutSectionRef,
-    offset: ["0 1", "1.33 1"],
-  });
-  const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
   return (
-    <motion.section
-      className="container py-4"
-      style={{ opacity: scaleProgress, scale: scaleProgress }}
-      id="about-me"
-      ref={aboutSectionRef}
-    >
+    <section className="container py-4" id="about-me">
       <div className="flex gap-2 items-center max-w-[790px] pb-3 border-b border-n-grey mb-5">
-        <span className="block max-w-fit font-small text-r-text-muted -rotate-90 -ml-4 mb-3 td-150">
+        <span className="block max-w-fit whitespace-nowrap overflow-hidden font-small text-r-text-muted -rotate-90 -ml-4 mb-3 td-150">
           - Toggle -
         </span>
 
@@ -54,7 +37,7 @@ const About = () => {
       >
         View Work
       </Link>
-    </motion.section>
+    </section>
   );
 };
 
