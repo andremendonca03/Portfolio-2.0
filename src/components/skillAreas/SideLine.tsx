@@ -10,8 +10,6 @@ const SideLine = ({
 }) => {
   return (
     <div className="relative flex flex-col justify-between">
-      <span className="block w-max font-small text-r-text-muted absolute -top-6">- Skill Areas -</span>
-
       <span className="block w-[2px] h-full bg-gradient-to-b from-s via-r-bg to-p absolute top-0 left-1/2 -translate-x-1/2"></span>
 
       {skillAreas.map((item, index) => {

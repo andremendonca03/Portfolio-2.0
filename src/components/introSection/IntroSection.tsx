@@ -13,7 +13,7 @@ const IntroSection = () => {
   const isInView = useInView(containerRef, {once: true});
 
   return (
-    <section className="container text-r-text py-9" id="intro" ref={containerRef}>
+    <section className="container text-r-text py-8 md:py-9" id="intro" ref={containerRef}>
       <div
         className={cn("opacity-0 translate-y-6 transition duration-500", {
           "translate-y-0 opacity-1": isInView,
@@ -21,7 +21,7 @@ const IntroSection = () => {
       >
         <span className="block font-heading5 -mb-1">Hi,</span>
         <h1 className="font-heading2">
-          my name is <strong className="font-bold">Andre Mendonca</strong>
+          my name is <strong className="block sm:inline font-bold">Andre Mendonca</strong>
         </h1>
         <div className="inline-block">
           <div
