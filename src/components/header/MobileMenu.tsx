@@ -9,12 +9,13 @@ import DribbbleIcon from '../icons/DribbbleIcon';
 import MailIcon from '../icons/MailIcon';
 
 const MobileMenu = () => {
-  const mobileMenu = React.useRef<HTMLDivElement>(null);
+  const mobileMenuRef = React.useRef<HTMLDivElement>(null);
+  const mobileMenuToggleRef = React.useRef<HTMLDivElement>(null);
 
-  function handleToggleMenu(e: React.MouseEvent) {
-    if (mobileMenu.current && e.currentTarget.children[0]) {
-      mobileMenu.current.classList.toggle("active");
-      e.currentTarget.children[0].classList.toggle("active");
+  function handleToggleMenu() {
+    if (mobileMenuRef.current && mobileMenuToggleRef.current?.children[0]) {
+      mobileMenuRef.current.classList.toggle("active");
+      mobileMenuToggleRef.current.children[0].classList.toggle("active");
 
       document.body.classList.toggle("preventScroll");
     }
@@ -22,17 +23,17 @@ const MobileMenu = () => {
 
   return (
     <div className='md:hidden'>
-      <div className='py-3 px-1' aria-label="Toggle Mobile Menu" onClick={handleToggleMenu}>
+      <div className='py-3 px-1' aria-label="Toggle Mobile Menu" ref={mobileMenuToggleRef} onClick={handleToggleMenu}>
         <div className={styles.mobileMenuToggle}></div>
       </div>
 
-      <div ref={mobileMenu} className={styles.mobileMenuWrapper}>
+      <div ref={mobileMenuRef} className={styles.mobileMenuWrapper}>
         <nav className={styles.mobileMenu}>
           <div className={styles.mobileMenuNav}>
-            <Link href={"#about-me"}>About me</Link>
-            <Link href={"#skills"}>Skills</Link>
-            <Link href={"#showcase"}>Showcase</Link>
-            <Link href={"#contact"}>Contact</Link>
+            <Link onClick={handleToggleMenu} href={"#about-me"}>About me</Link>
+            <Link onClick={handleToggleMenu} href={"#skills"}>Skills</Link>
+            <Link onClick={handleToggleMenu} href={"#showcase"}>Showcase</Link>
+            <Link onClick={handleToggleMenu} href={"#contact"}>Contact</Link>
           </div>
 
           <div className={styles.mobileMenuSocials}>

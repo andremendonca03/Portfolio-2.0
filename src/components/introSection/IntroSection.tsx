@@ -13,7 +13,7 @@ const IntroSection = () => {
   const isInView = useInView(containerRef, {once: true});
 
   return (
-    <section className="container text-r-text py-8 md:py-9" id="intro" ref={containerRef}>
+    <section className="container text-r-text pt-8 pb-7 md:pt-9 md:pb-8" id="intro" ref={containerRef}>
       <div
         className={cn("opacity-0 translate-y-6 transition duration-500", {
           "translate-y-0 opacity-1": isInView,

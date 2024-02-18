@@ -8,7 +8,7 @@ const About = () => {
   const global = React.useContext(GlobalContext);
 
   return (
-    <section className="container py-4" id="about-me">
+    <section className="container pt-7 pb-4" id="about-me">
       <div className="flex gap-2 items-center max-w-[790px] pb-3 border-b border-n-grey mb-5">
         <span className="block max-w-fit whitespace-nowrap overflow-hidden font-small text-r-text-muted -rotate-90 -ml-4 mb-3 td-150">
           - Toggle -
