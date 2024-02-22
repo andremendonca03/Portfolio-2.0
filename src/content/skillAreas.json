@@ -7,7 +7,7 @@
         "url": "/projects/?type=design",
         "title": "View UI/UX Projects"
       },
-      "skills": ["Figma", "Adobe XD", "Design System", "Wireframing", "Variable & Mobile First"],
+      "skills": ["Figma", "Adobe XD", "Design System", "Wireframing", "Branding", "Product Design"],
       "color": "s"
     },
     {
@@ -17,7 +17,7 @@
         "url": "/projects/?type=design",
         "title": "View UI/UX Projects"
       },
-      "skills": ["Figma", "Adobe XD", "Design System", "Wireframing", "Variable & Mobile First"],
+      "skills": ["Tailwind CSS", "Radix UI", "SASS & LESS", "CSS Modules", "Variable & Mobile First"],
       "color": "s"
     },
     {
@@ -27,7 +27,7 @@
         "url": "/projects/?type=design",
         "title": "View UI/UX Projects"
       },
-      "skills": ["Figma", "Adobe XD", "Design System", "Wireframing", "Variable & Mobile First"],
+      "skills": ["Headless CMS Development", "Sanity & Payload", "Composable Content", "Wireframing", "Variable & Mobile First"],
       "color": "p"
     },
     {
@@ -37,7 +37,7 @@
         "url": "/projects/?type=dev",
         "title": "View Web Dev Projects"
       },
-      "skills": ["Next.js", "React", "Typescript", "Wireframing", "Variable & Mobile First"],
+      "skills": ["Next.js", "React", "Typescript", "HTML, CSS & JS", "WordPress & Shopify", "PHP"],
       "color": "p"
     },
     {
@@ -47,7 +47,7 @@
         "url": "/projects/?type=design",
         "title": "View UI/UX Projects"
       },
-      "skills": ["Figma", "Adobe XD", "Design System", "Wireframing", "Variable & Mobile First"],
+      "skills": ["Implementing & Manipulating APIs", "GraphQL", "HTTP Methods", "REST", "Authentication", "Firebase & Supabase"],
       "color": "p"
     }
   ]

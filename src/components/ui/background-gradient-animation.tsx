@@ -85,6 +85,8 @@ export const BackgroundGradientAnimation = ({
     }
   };
 
+  return null;
+
   return (
     <div
       className={cn(

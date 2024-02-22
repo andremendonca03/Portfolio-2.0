@@ -18,49 +18,37 @@ const About = () => {
       </div>
 
       <div className="grid">
-        <div className={cn("col-start-1 row-start-1 max-w-[790px] font-copy text-r-text-muted mb-5 translate-y-4 opacity-0 invisible", {
-          "translate-y-0 visible opacity-100 transition duration-300":
+        <div className={cn("col-start-1 row-start-1 max-w-[790px] font-copy text-r-text-muted mb-5 translate-y-4 opacity-0 invisible max-h-0", {
+          "translate-y-0 opacity-100 visible max-h-full transition duration-300":
           global.themeMode === "devMode",
         })}>
           <p className="mb-3">
-            I am a
+            I am a passionate
             <strong className="text-r-text font-bold"> Front-End Developer </strong>
-            who is passionate about coding and creating well designed
-            applications. The feeling of challenge is what makes me determined to
-            solve problems and work out the best solutions, always aiming to level
-            up.
+            with over 4 years of hands-on experience in crafting engaging digital experiences. Throughout my career, I&apos;ve honed my expertise in addressing complex problems and delivering effective solutions, always focused on staying up-to-date with the latest technologies and best practices. 
           </p>
           <p className="mb-3">
-            As a student, I have completed many advanced courses in different
-            areas of programming and design, and I am eager to discover and learn
-            much more.As a worker, I am hard-worker completely adaptable for any
-            work environment to develop and grow as a team or by myself.
+            With a solid foundation built on years of practical experience and advanced coursework, <strong className="text-r-text font-bold">I excel in challenging environments</strong> where each obstacle presents an opportunity for growth. I&apos;m excited to continue pushing the boundaries of development, always striving to create captivating applications with a seamless user experience.
           </p>
         </div>
 
-        <div className={cn("col-start-1 row-start-1 max-w-[790px] font-copy text-r-text-muted mb-5 translate-y-4 opacity-0 invisible", {
-          "translate-y-0 visible opacity-100 transition duration-300":
+        <div className={cn("col-start-1 row-start-1 max-w-[790px] font-copy text-r-text-muted mb-5 translate-y-4 opacity-0 invisible max-h-0", {
+          "translate-y-0 opacity-100 visible max-h-full transition duration-300":
           global.themeMode === "designMode",
         })}>
           <p className="mb-3">
-            I am a
+            I am a creative
             <strong className="text-r-text font-bold"> UI/UX Designer </strong>
-            who is passionate about coding and creating well designed
-            applications. The feeling of challenge is what makes me determined to
-            solve problems and work out the best solutions, always aiming to level
-            up.
+            who is eager to continue pushing the boundaries of design innovation, creating bold experiences that also drive tangible results for businesses, working closely with clients to craft brands that sell.
           </p>
           <p className="mb-3">
-            As a student, I have completed many advanced courses in different
-            areas of programming and design, and I am eager to discover and learn
-            much more.As a worker, I am hard-worker completely adaptable for any
-            work environment to develop and grow as a team or by myself.
+            While my primary focus lies in front-end development, my background in design provides me with a comprehensive understanding of the technical aspects of implementation. This dual expertise allows me to bridge the gap between design and development seamlessly, resulting in cohesive and impactful digital solutions.
           </p>
         </div>
       </div>
 
       <Link
-        href="#my-work"
+        href={"#skills"}
         scroll={false}
         className="button border-r-accent ml-0 text-r-text shadow-[0_0_4px_1px] shadow-r-accent-80 hover:bg-r-accent-80 hover:text-n-white hover:shadow-lg hover:shadow-r-accent-80"
       >
