@@ -18,9 +18,9 @@ const ContentTabs = ({
           <div
             key={index}
             className={cn(
-              `col-start-1 row-start-1 mr-4 translate-y-4 invisible opacity-0`,
+              `col-start-1 row-start-1 mr-4 max-h-0 translate-y-4 invisible opacity-0`,
               {
-                "translate-y-0 visible opacity-100 transition duration-300":
+                "max-h-full translate-y-0 visible opacity-100 transition duration-300":
                   activeTab === index,
               }
             )}

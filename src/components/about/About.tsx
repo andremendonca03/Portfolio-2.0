@@ -25,10 +25,10 @@ const About = () => {
           <p className="mb-3">
             I am a passionate
             <strong className="text-r-text font-bold"> Front-End Developer </strong>
-            with over 4 years of hands-on experience in crafting engaging digital experiences. Throughout my career, I&apos;ve honed my expertise in addressing complex problems and delivering effective solutions, always focused on staying up-to-date with the latest technologies and best practices. 
+            with over 4 years of hands-on experience in building engaging digital solutions. Throughout my career, I&apos;ve strived to address complex problems and deliver effective outcomes, always aiming to stay up-to-date with the latest technologies and industry best practices. 
           </p>
           <p className="mb-3">
-            With a solid foundation built on years of practical experience and advanced coursework, <strong className="text-r-text font-bold">I excel in challenging environments</strong> where each obstacle presents an opportunity for growth. I&apos;m excited to continue pushing the boundaries of development, always striving to create captivating applications with a seamless user experience.
+            With a solid foundation built on years of practical experience and advanced coursework, <strong className="text-r-text font-bold">I excel in challenging environments</strong> where each obstacle represents an opportunity for growth. I&apos;m eager to continue pushing the boundaries of development and exploring emerging tools to provide a seamless user experience.
           </p>
         </div>
 
@@ -39,10 +39,10 @@ const About = () => {
           <p className="mb-3">
             I am a creative
             <strong className="text-r-text font-bold"> UI/UX Designer </strong>
-            who is eager to continue pushing the boundaries of design innovation, creating bold experiences that also drive tangible results for businesses, working closely with clients to craft brands that sell.
+            who creates bold experiences that also drive tangible results for businesses, working closely with clients to craft brands that sell.
           </p>
           <p className="mb-3">
-            While my primary focus lies in front-end development, my background in design provides me with a comprehensive understanding of the technical aspects of implementation. This dual expertise allows me to bridge the gap between design and development seamlessly, resulting in cohesive and impactful digital solutions.
+            Primarely focusing in Front-end development, my background in design provides me with a comprehensive understanding of the technical aspects and implementation. This dual expertise allows me to <strong className="text-r-text font-bold">bridge the gap between design and development</strong> seamlessly, resulting in consistent and impactful digital products.
           </p>
         </div>
       </div>

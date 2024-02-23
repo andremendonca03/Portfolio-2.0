@@ -136,24 +136,25 @@ html:root {
   }
 }
 
-/*
-body {
-  &::after {
-    content: '';
-    display: block;
-    width: 600px;
-    height: 600px;
-    background: var(--color-root-accent-80);
-    opacity: .5;
-    border-radius: 50%;
-    box-shadow: 0 0 250px 100px var(color-root-accent-80);
-    filter: blur(100px);
-    position: fixed;
-    top: 100px;
-    right: 0;
-    animation: pulse 5s alternate infinite;
-  }
-}*/
+html.designMode body::after {
+  opacity: .7;
+}
+
+body::after {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 150px;
+  background: var(--color-root-accent-80);
+  opacity: .5;
+  border-radius: 50%;
+  box-shadow: 0 0 50px 20px var(color-root-accent-80);
+  filter: blur(100px);
+  position: absolute;
+  top: 450px;
+  right: 0;
+  animation: pulse 5s alternate infinite;
+}
 
 body.preventScroll {
   height: 100vh;
@@ -162,11 +163,12 @@ body.preventScroll {
 
 @keyframes pulse {
   50% {
-    filter: blur(50px);
-    box-shadow: 0 0 250px 0px var(color-root-accent-80);
+    filter: blur(80px);
+    //box-shadow: 0 0 250px 0px var(color-root-accent-80);
   }
   100% {
-    box-shadow: 0 0 250px 100px var(color-root-accent-80);
+    filter: blur(150px);
+    //box-shadow: 0 0 250px 100px var(color-root-accent-80);
   }
 }
 
@@ -185,6 +187,12 @@ body.preventScroll {
   html {
     font-size: 54.5%;
   }
+  body::after {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 0 150px 10px var(color-root-accent-80);
+    top: 300px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -196,6 +204,12 @@ body.preventScroll {
 @media only screen and (min-width: 992px) {
   html {
     font-size: 60%;
+  }
+  body::after {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 250px 50px var(color-root-accent-80);
+    top: 200px;
   }
 }
 
