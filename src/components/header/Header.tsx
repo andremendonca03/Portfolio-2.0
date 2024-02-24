@@ -27,10 +27,10 @@ const Header = () => {
         </Link>
 
         <nav className="group hidden gap-5 font-large text-r-text md:flex">
-          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"#about-me"}>About me</Link>
-          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"#skills"}>Skills</Link>
-          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"#showcase"}>Showcase</Link>
-          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"#contact"}>Contact</Link>
+          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"/#about-me"}>About me</Link>
+          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"/#skills"}>Skills</Link>
+          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"/#showcase"}>Showcase</Link>
+          <Link className="group-hover:opacity-40 hover:!opacity-100 td-150" href={"/#contact"}>Contact</Link>
         </nav>
 
         <div className="flex items-center gap-4">

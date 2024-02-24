@@ -9,8 +9,8 @@ const Projects = () => {
     <div>
       <Header />
 
-      <main className="main">
-        <h1 className="font-heading1 text-r-text container mb-7">Projects Showcase</h1>
+      <main className="main relative z-1">
+        <h1 className="font-heading1 text-r-text container mt-5 mb-7">Projects Showcase</h1>
 
         <div className="space-y-7 mb-8">
           {data.map((item, index) => {
