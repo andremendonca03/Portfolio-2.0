@@ -1,0 +1,32 @@
+[
+  {
+    "title": "NeoPass",
+    "copy": "<p>The Safe works as a financial help application that enables the user to register and track their expenses and earnings in a clear and easy-to-use design created regarding the User Experience. In addition, all the data is saved in real time at the browser&apos;s Local Storage.</p>",
+    "image": "/neopass/cover.jpg",
+    "link": "#"
+  },
+  {
+    "title": "The Safe",
+    "copy": "<p>The Safe works as a financial help application that enables the user to register and track their expenses and earnings in a clear and easy-to-use design created regarding the User Experience. In addition, all the data is saved in real time at the browser&apos;s Local Storage.</p>",
+    "image": "/the-safe/cover.png",
+    "link": "https://the-safe.andremendonca.me"
+  },
+  {
+    "title": "Giancarlo",
+    "copy": "<p>My biggest website packed with content of a classy restaurant and the tradition of the family behind it. Created following design patterns and grid layout model.</p>",
+    "image": "/giancarlo/cover.png",
+    "link": "https://giancarlo.andremendonca.me"
+  },
+  {
+    "title": "GymFit",
+    "copy": "<p>A fitness centre providing personal trainers and paid plans in 6 different locations throughout Sydney.</p>",
+    "image": "/gymfit/cover.png",
+    "link": "https://gymfit.andremendonca.me"
+  },
+  {
+    "title": "NeoPass",
+    "copy": "<p>The Safe works as a financial help application that enables the user to register and track their expenses and earnings in a clear and easy-to-use design created regarding the User Experience. In addition, all the data is saved in real time at the browser’s Local Storage.</p>",
+    "image": "/electract-energy/cover.png",
+    "link": "https://electractenergy.com.au"
+  }
+]

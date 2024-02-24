@@ -154,6 +154,7 @@ body::after {
   top: 450px;
   right: 0;
   animation: pulse 5s alternate infinite;
+  z-index: -1;
 }
 
 body.preventScroll {

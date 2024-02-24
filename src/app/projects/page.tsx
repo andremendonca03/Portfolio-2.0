@@ -1,5 +1,7 @@
-import Footer from "@/components/footer/Footer"
-import Header from "@/components/header/Header"
+import Footer from "@/components/footer/Footer";
+import Header from "@/components/header/Header";
+import ProjectIntro from "@/components/projectIntro/ProjectIntro";
+import data from "@/content/projectsPage.json";
 
 const Projects = () => {
 
@@ -7,8 +9,16 @@ const Projects = () => {
     <div>
       <Header />
 
-      <main className="main h-[200vh]">
-        <h1 className="font-heading1 text-r-text">PROJECTS PAGE</h1>
+      <main className="main">
+        <h1 className="font-heading1 text-r-text container mb-7">Projects Showcase</h1>
+
+        <div className="space-y-7 mb-8">
+          {data.map((item, index) => {
+            return (
+              <ProjectIntro data={item} key={index} />
+            );
+          })}
+        </div>
 
       </main>
 
