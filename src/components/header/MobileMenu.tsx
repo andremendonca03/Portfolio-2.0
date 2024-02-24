@@ -30,10 +30,10 @@ const MobileMenu = () => {
       <div ref={mobileMenuRef} className={styles.mobileMenuWrapper}>
         <nav className={styles.mobileMenu}>
           <div className={styles.mobileMenuNav}>
-            <Link onClick={handleToggleMenu} href={"#about-me"}>About me</Link>
-            <Link onClick={handleToggleMenu} href={"#skills"}>Skills</Link>
-            <Link onClick={handleToggleMenu} href={"#showcase"}>Showcase</Link>
-            <Link onClick={handleToggleMenu} href={"#contact"}>Contact</Link>
+            <Link onClick={handleToggleMenu} href={"/#about-me"}>About me</Link>
+            <Link onClick={handleToggleMenu} href={"/#skills"}>Skills</Link>
+            <Link onClick={handleToggleMenu} href={"/#showcase"}>Showcase</Link>
+            <Link onClick={handleToggleMenu} href={"/#contact"}>Contact</Link>
           </div>
 
           <div className={styles.mobileMenuSocials}>
