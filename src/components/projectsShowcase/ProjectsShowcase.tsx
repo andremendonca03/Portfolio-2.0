@@ -21,13 +21,14 @@ const ProjectsShowcase = () => {
           />
         </div>
         <div className="flex flex-col gap-3 md:gap-5 mt-4 md:mt-6">
-          <ProjectCover
-            src={"/electract-energy/cover.png"}
-            alt={"Electract Energy Cover"}
-          />
+
           <ProjectCover
             src={"/giancarlo/cover.png"}
             alt={"Giancarlo Project Cover"}
+          />
+          <ProjectCover
+            src={"/fantastic-animals/cover.jpg"}
+            alt={"Fantastic Animals Cover"}
           />
         </div>
       </div>
