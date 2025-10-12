@@ -36,7 +36,7 @@ const Footer = () => {
         </p>
 
         <p className="text-r-text-muted mb-4">
-          You can also find more about me and my work on the links below:
+          You can also find more about me and my work at the links below:
         </p>
 
         <div className="flex items-center gap-4">

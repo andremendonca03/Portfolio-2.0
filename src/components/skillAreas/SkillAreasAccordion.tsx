@@ -59,7 +59,7 @@ const SkillAreasAccordion = ({
                 dangerouslySetInnerHTML={{ __html: item.copy }}
               ></div>
 
-              <ul className="grid grid-cols-2 gap-y-2 gap-x-4 mb-6">
+              <ul className="grid grid-cols-2 gap-y-2 gap-x-4 mb-4">
                 {item.skills.map((skill, i) => {
                   return (
                     <li key={i} className="flex gap-2">
@@ -73,15 +73,6 @@ const SkillAreasAccordion = ({
                   );
                 })}
               </ul>
-
-              <Link
-                className={cn(
-                  `button border-${item.color} ml-0 mb-5 text-n-white bg-${item.color}-80 hover:bg-transparent hover:text-r-text hover:shadow-lg hover:shadow-${item.color}-80`
-                )}
-                href={item.link.url}
-              >
-                {item.link.title}
-              </Link>
             </AccordionContent>
           </AccordionItem>
         );

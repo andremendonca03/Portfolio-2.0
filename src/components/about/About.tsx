@@ -25,10 +25,10 @@ const About = () => {
           <p className="mb-3">
             I am a passionate
             <strong className="text-r-text font-bold"> Front-End Developer </strong>
-            with over 4 years of hands-on experience in building engaging digital solutions. Throughout my career, I&apos;ve strived to address complex problems and deliver effective outcomes, always aiming to stay up-to-date with the latest technologies and industry best practices. 
+            with over 5 years of hands-on experience in building engaging digital solutions. Throughout my career, I&apos;ve strived to address complex problems and deliver effective outcomes, always aiming to stay up-to-date with the latest technologies and industry best practices. 
           </p>
           <p className="mb-3">
-            With a solid foundation built on years of practical experience and advanced coursework, <strong className="text-r-text font-bold">I excel in challenging environments</strong> where each obstacle represents an opportunity for growth. I&apos;m eager to continue pushing the boundaries of development and exploring emerging tools to provide a seamless user experience.
+            With a solid foundation built on years of practical experience and advanced coursework, I <strong className="text-r-text font-bold">excel in challenging environments</strong> where each obstacle represents an opportunity for growth. I&apos;m eager to continue pushing the boundaries of development and exploring emerging tools to provide a seamless user experience.
           </p>
         </div>
 
@@ -49,10 +49,9 @@ const About = () => {
 
       <Link
         href={"#skills"}
-        scroll={false}
         className="button border-r-accent ml-0 text-r-text shadow-[0_0_4px_1px] shadow-r-accent-80 hover:bg-r-accent-80 hover:text-n-white hover:shadow-lg hover:shadow-r-accent-80"
       >
-        View Work
+        View Skills
       </Link>
     </section>
   );

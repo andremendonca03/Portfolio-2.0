@@ -33,21 +33,6 @@ const ProjectsShowcase = () => {
         </div>
       </div>
 
-      <div className="py-5 md:py-6 relative after:absolute after:bg-gradient-to-b after:from-r-bg after:to-90% md:after:to-70% after:w-full after:h-full after:inset-0">
-        <p className="max-w-[790px] text-r-text-muted text-center mx-auto mb-5 relative z-2">
-          Explore all my personal and commercial{" "}
-          <strong className="text-r-text font-bold">projects</strong> and
-          understand the design choices, purpose of layout and take a look at
-          the finalised products and source code.
-        </p>
-
-        <Link
-          className="button text-n-white bg-r-accent-80 border-r-accent shadow-[0_0_4px_1px] shadow-r-accent-80 hover:text-r-text hover:bg-transparent hover:shadow-lg hover:shadow-r-accent-80 relative z-2"
-          href={"/projects"}
-        >
-          View All Projects
-        </Link>
-      </div>
     </section>
   );
 };

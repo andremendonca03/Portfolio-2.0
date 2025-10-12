@@ -29,13 +29,13 @@ const IntroSection = () => {
             className="w-[110%] whitespace-nowrap overflow-hidden font-heading2 font-bold mb-6 text-r-accent-80 animate [&.animate]:animate-[typing_.5s_steps(28)]"
           >
             {global.themeMode === "devMode"
-              ? "Front-end Dev"
+              ? "Front-End Dev"
               : "UI/UX Designer"}
           </div>
         </div>
 
         <a
-          href="/AndreMendonca-CV.pdf"
+          href="/AndreMendonca-2025-CV.pdf"
           download
           className="group button flex items-center justify-between gap-2 text-n-white bg-r-accent-80 border-r-accent shadow-[0_0_4px_1px] shadow-r-accent-80 ml-0 hover:text-r-text hover:bg-transparent hover:shadow-lg hover:shadow-r-accent-80"
         >

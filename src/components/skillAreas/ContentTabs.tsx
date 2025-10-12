@@ -30,15 +30,6 @@ const ContentTabs = ({
               dangerouslySetInnerHTML={{ __html: item.copy }}
             ></div>
 
-            <Link
-              className={cn(
-                `button border-${item.color} ml-0 mb-4 text-r-text hover:bg-${item.color}-80 hover:text-n-white hover:shadow-lg hover:shadow-${item.color}-80`
-              )}
-              href={item.link.url}
-            >
-              {item.link.title}
-            </Link>
-
             <hr className="border-n-grey mb-4" />
 
             <ul className="grid grid-cols-2 gap-y-2 gap-x-4">

@@ -2,7 +2,7 @@
   "skillAreas": [
     {
       "title": "UI/UX Design",
-      "copy": "<p>I make use of tools like Figma and Adobe XD to create <strong>immersive design experiences</strong>, with a solid and consistent use of interface elements, colour schemes, spatial relationships, scale, typography, and style component patterns.</p><p>My approach takes the user's experience and the client's main goal to develop <strong>simple yet distinctive designs</strong> that seamlessly integrate into the user's journey. By focusing on the user's experience, I ensure that every design decision enhances usability and customers engagement.</p>",
+      "copy": "<p>I make use of tools like Figma and Adobe XD to create <strong>immersive design experiences</strong>, with a solid and consistent use of interface elements, colour schemes, spatial relationships, scale, typography, and style component patterns.</p><p>My approach takes the user's experience and the client's main goal to develop <strong>simple yet distinctive designs</strong> that seamlessly integrate into the user's journey. By focusing on the user's experience, I ensure that every design decision enhances usability and customers&apos; engagement.</p>",
       "link": {
         "url": "/projects/?type=design",
         "title": "View UI/UX Projects"
@@ -11,18 +11,18 @@
       "color": "s"
     },
     {
-      "title": "Front-end Styling",
-      "copy": "<p>In an open sea of Front-end styling solutions, my stack relies on Tailwind CSS for majority of the projects, along with a <strong>variety of UI libraries</strong> such as Shadcn, Framer Motion, Radix UI and Aceternity.</p><p>Additionally using CSS pre-processors like SASS (SCSS) and LESS as well as CSS Modules for building <strong>more complex UI structures</strong> and leveraging nesting, mixins, code splitting and all other valuable techniques that come with them to design modern, variable and mobile-first experiences.</p>",
+      "title": "Front-End Styling",
+      "copy": "<p>In an open sea of Front-End styling solutions, my stack relies mainly on Tailwind CSS, along with a <strong>variety of UI libraries</strong> such as Shadcn, Framer Motion, and Radix UI.</p><p>Additionally using CSS pre-processors like SASS (SCSS) and LESS as well as CSS Modules for building <strong>more complex UI structures</strong> and leveraging nesting, mixins, code splitting and all other valuable techniques that come with them to design modern, consistent and mobile-first experiences.</p>",
       "link": {
         "url": "/projects/?type=design",
         "title": "View Front-end Projects"
       },
-      "skills": ["Tailwind CSS", "Radix UI", "SASS & LESS", "CSS Modules", "Variable & Mobile First", "Bootstrap 5"],
+      "skills": ["Tailwind CSS", "Radix UI", "SASS & LESS", "CSS Modules", "Variable & Mobile-First", "Bootstrap 5"],
       "color": "s"
     },
     {
       "title": "Headless CMS",
-      "copy": "<p>I have strong knowledge in building headless, API-first and Cloud-native softwares to deliver exceptional results with cutting-edge and future-proof technologies. Such tools allow me to deeply integrate UX and Systems, creating outstanding <strong>full-funnel applications</strong></p><p><strong>High expertise</strong> with some of the most popular CMSs out there like Sanity, Contentful and Payload (my favourite) powering blazingly fast, ultra-performant web applications backed by bold and efficient Content Management Systems.</p>",
+      "copy": "<p>I have strong knowledge in building headless, API-first and Cloud-native softwares to deliver exceptional results with cutting-edge and future-proof technologies. Such tools allow me to deeply integrate UX and Systems, creating outstanding <strong>full-funnel applications.</strong></p><p><strong>High expertise</strong> with some of the most popular CMSs out there like Sanity, Contentful and Payload (my favourite) powering blazingly fast, ultra-performant web applications backed by bold and efficient Content Management Systems.</p>",
       "link": {
         "url": "/projects/?type=dev",
         "title": "View Headless Projects"
@@ -31,23 +31,23 @@
       "color": "p"
     },
     {
-      "title": "Web Development",
-      "copy": "<p>Excellent skills in employing JSX structure to build modern reactive applications, with advanced file structure, break down of modular components and a <strong>fully typed codebase with Typescript</strong> for enhanced maintainability. Leveraging native hooks, server actions, pre-rendering, streaming and caching to ensure dynamic and interactive user experiences.</p><p>Strong understanding of data types and DOM manipulation, efficiently handling events' callbacks and JS Promises. <strong>SEO-first development</strong> prioritising semantic tags and improving readability, accessibility and optimisation. With experience building custom or native WordPress and Shopify websites.</p>",
+      "title": "Web Applications",
+      "copy": "<p>Excellent skills in employing JSX structure to build modern reactive applications, with advanced file structure, break down of modular components and a <strong>fully typed codebase with Typescript</strong> for enhanced maintainability. Leveraging native hooks, server actions, pre-rendering, streaming and caching to ensure dynamic and interactive user experiences.</p><p>Strong understanding of data types and DOM manipulation, efficiently handling events' callbacks and JS Promises. <strong>SEO-first development</strong> prioritising semantic tags and improving readability, accessibility and optimisation. With experience building custom or native WordPress, HubSpot, and Shopify websites.</p>",
       "link": {
         "url": "/projects/?type=dev",
         "title": "View Web Dev Projects"
       },
-      "skills": ["Next.js", "React", "Typescript", "HTML, CSS & JS", "WordPress & Shopify", "PHP"],
+      "skills": ["React & Next.js", "Typescript", "HTML, CSS & JS", "SPAs", "WordPress & Shopify", "PHP, Liquid & HubL"],
       "color": "p"
     },
     {
       "title": "APIs & Data Handling",
-      "copy": "<p>Advanced knowledge in creating, manipulating and consuming APIs for various use cases. <strong>Handling CRUD operations</strong> in RESTful and GraphQL endpoints as well as performing user authentication, login and securing private content.</p><p>Dynamically and programmatically modifying data and UI for optimal systems performance and updating/retrieving data from <strong>object-oriented databases</strong> such as MongoDB and Postgres.</p>",
+      "copy": "<p>Advanced knowledge in creating, manipulating and consuming APIs for various use cases. <strong>Handling CRUD operations</strong> in RESTful and GraphQL endpoints as well as performing user authentication, login and securing private content.</p><p>Dynamically and programmatically modifying data and UIs for optimal systems performance and updating/retrieving data from <strong>SQL & NoSQL Databases</strong> such as MongoDB and Postgres.</p>",
       "link": {
         "url": "/projects/?type=dev",
         "title": "View API Projects"
       },
-      "skills": ["GraphQL & REST", "HTTP Methods", "Axios", "Authentication", "Firebase & Supabase", "Implementing & Manipulating APIs"],
+      "skills": ["GraphQL & REST", "Webhooks & Auth", "AI SDK & N8N", "MongoDB & Supabase", "Implementing & Manipulating APIs"],
       "color": "p"
     }
   ]
