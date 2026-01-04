@@ -35,7 +35,7 @@ const IntroSection = () => {
         </div>
 
         <a
-          href="/AndreMendonca-2025-CV.pdf"
+          href="/AndreMendonca-2026-CV.pdf"
           download
           className="group button flex items-center justify-between gap-2 text-n-white bg-r-accent-80 border-r-accent shadow-[0_0_4px_1px] shadow-r-accent-80 ml-0 hover:text-r-text hover:bg-transparent hover:shadow-lg hover:shadow-r-accent-80"
         >
